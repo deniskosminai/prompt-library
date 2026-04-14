@@ -1,0 +1,28 @@
+name: LLM Prompt Evaluation
+
+on:
+  pull_request:
+    paths:
+      - 'prompts/**'
+      - 'tests/**'
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Promptfoo
+        run: npm install -g promptfoo
+
+      - name: Run Prompt Tests
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        # Запускаем тесты из папки tests
+        run: promptfoo eval --config tests/promptfooconfig.yaml

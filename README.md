@@ -104,8 +104,8 @@ promptfoo eval
 
 ## 👥 Авторы и Контакты
 
-- **Владелец**: Денис Косьмин
--**Contact**: [![Telegram](https://img.shields.io/badge/Telegram-@dkosmin_ai-blue?logo=telegram)](https://t.me/dkosmin_ai)
+- **Владелец**: Денис Косьмин  
+- **Contact**: [![Telegram](https://img.shields.io/badge/Telegram-@dkosmin_ai-blue?logo=telegram)](https://t.me/@dkosmin_ai)
 - **Роль**: Prompt Engineer / AI Lead
 
 ---

@@ -1,0 +1,15 @@
+# Какой промпт тестируем:
+prompts:
+  - file://../prompts/seo-generator/prompt_v1.1.md
+
+# Какую модель используем (Например OpenAI, но для локального теста можно ollama:chat:llama3)
+providers:
+  - id: openai:gpt-4o-mini
+    config:
+      temperature: 0.5
+
+# Где лежат тестовые данные:
+defaultTest:
+  options:
+    provider: openai:gpt-4o-mini
+tests: file://test_cases.json

@@ -1,0 +1,41 @@
+{
+    "description": "Тест режима Draft",
+    "vars": {
+      "product": "Telegram-бот для кафе",
+      "platform": "Kwork",
+      "audience": "Малый бизнес РФ",
+      "benefits": "Автоматизация заказов",
+      "keywords": "бот, телеграм, кафе",
+      "mode": "draft",
+      "product_description": "Бот принимает заказы и оплату."
+    },
+    "assert":[
+      {
+        "type": "javascript",
+        "value": "output.length < 1000"
+      },
+      {
+        "type": "regex",
+        "value": "Score: \\d+/10"
+      }
+    ]
+  },
+  {
+    "description": "Тест режима Prod (Проверка ключей)",
+    "vars": {
+      "product": "CRM-система",
+      "platform": "Сайт",
+      "audience": "Владельцы салонов",
+      "benefits": "Удобная запись",
+      "keywords": "CRM, салон, запись",
+      "mode": "prod",
+      "product_description": "Система учета клиентов"
+    },
+    "assert":[
+      {
+        "type": "contains-all",
+        "value":["CRM", "салон", "запись"]
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+name: "SEO Generator"
+author: "Ваше Имя"
+tags: ["SEO", "Copywriting", "CLEAR"]
+description: "Генератор SEO-текстов по фреймворку CLEAR с самопроверкой."
+variables: 
+  - product
+  - platform
+  - audience
+  - benefits
+  - keywords
+  - mode
+  - product_description

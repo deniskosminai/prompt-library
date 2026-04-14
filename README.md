@@ -104,7 +104,7 @@ promptfoo eval
 
 ## 👥 Авторы и Контакты
 
-- **Владелец**: [Ваше Имя] - [@your_telegram]
+- **Владелец**: [Денис Косьмин] - [@dkosmin_ai]
 - **Роль**: Prompt Engineer / AI Lead
 
 ---
